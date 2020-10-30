@@ -89,7 +89,7 @@ params = {
 
 * compresing mutiple folder and file
 ```shell
-  $: img "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\00d12a0c0d26902390d8694e7e08e903_t.gif" "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\6f5dc47569a5b862e5682c16c990479d_t.gif" E:\private\h5-cdn\wlh-h5\src\assets\img
+  $: imglit "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\00d12a0c0d26902390d8694e7e08e903_t.gif" "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\6f5dc47569a5b862e5682c16c990479d_t.gif" E:\private\h5-cdn\wlh-h5\src\assets\img
 ```
 
 
