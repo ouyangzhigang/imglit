@@ -1,0 +1,47 @@
+{
+  "name": "imglit",
+  "version": "1.0.0",
+  "description": "img-light(imglit) is command tool for compress img",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx rollup -c"
+  },
+  "prepublishOnly": "npm run compile",
+  "bin": {
+    "imglit": "./bin/index"
+  },
+  "keywords": [
+    "img",
+    "compress",
+    "command",
+    "tool"
+  ],
+  "author": "VOYAGERGLE <ouyangzhigang@live.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-external-helpers": "^7.10.4",
+    "@babel/preset-env": "^7.12.0",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "log-symbols": "^4.0.0",
+    "rollup": "^2.30.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ouyangzhigang/imglit.git"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.0",
+    "gm": "^1.23.1",
+    "image-size": "^0.9.3",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "sharp": "^0.26.2"
+  }
+}
