@@ -39,16 +39,66 @@ npm install -g imglit
                   <command> [option]
 
 
-Options:
-  -v, --version          output the current version
-  -q, --quality <ratio>  compress the imgages quality ratio
-  -d, --dirname <dir>    Specifies the compressed resource path
-  -f, --filename <file>  Specifies ths compressed file name
-  -o, --output <export>  output file to another dir
-  -t, --tobase <name>    to convert source data of base64
-  -h, --help             display help for command
+  Options:
+    -v, --version          output the current version
+    -q, --quality <ratio>  compress the imgages quality ratio
+    -d, --dirname <dir>    Specifies the compressed resource path
+    -f, --filename <file>  Specifies ths compressed file name
+    -o, --output <export>  output file to another dir
+    -t, --tobase <name>    to convert source data of base64
+    -h, --help             display help for command
   ```
   
+> NOTE: support drag file or dir to command
+> `imglit ` can Intelligent identification of files or folders for automatic compression
 
-> NOTE: limitation
-> `vue-cli-service i18n:report` cannot detect missing and unused keys from local messages of i18n custom blocks.
+## :wrench: Imglit Configrations
+
+`imglit` run comman to compressing current dir internal images:
+
+```js
+params = {
+  quality: 0.8,
+  dirname: './',
+  subdirectory: false,
+  filename: ''
+}
+```
+
+## :white_check_mark: example
+* default run
+```shell
+  $: imglit
+```
+
+* compressing a single image
+```shell
+  $: imglit -f hello.png
+  # or
+  $: imglit hello.png
+  $ or
+  $: img "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\00d12a0c0d26902390d8694e7e08e903_t.gif" 
+```
+
+* compressing in a folder images
+```shell
+  $: imglit -d folder
+  # or
+  $: imglit folder
+```
+
+* compresing mutiple folder and file
+```shell
+  $: img "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\00d12a0c0d26902390d8694e7e08e903_t.gif" "C:\Users\ouyangzhigang-pc\Documents\WeChat Files\wxid_yvguh2ajmwgs21\FileStorage\File\2020-10\6f5dc47569a5b862e5682c16c990479d_t.gif" E:\private\h5-cdn\wlh-h5\src\assets\img
+```
+
+
+## :scroll: Changelog
+Details changes for each release are documented in the [CHANGELOG.md](https://github.com/ouyangzhigang/imglit/CHANGELOG.md).
+
+## :exclamation: Issues
+Please make sure to read the [Issue Reporting Checklist](https://github.com/ouyangzhigang/imglit/issues) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
+
+## :copyright: License
+
+[MIT](http://opensource.org/licenses/MIT)
